@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout"
+    tools:context="com.udacity.myapplication.MainActivity">
+
+    <ImageView
+        android:alpha="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/balloons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday B!"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="#01579B"
+        android:fontFamily="sans-serif-dark"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/birthday_cake"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/love_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shannon_text"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="15dp"
+        android:text="Love,"
+        android:textColor="#01579B"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/shannon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#01579B"
+        android:text="Shannon"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
